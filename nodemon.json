@@ -1,0 +1,10 @@
+{
+    "ignore": ["node_modules"],
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 3000,
+      "CONFIRMATION": "440e057d"
+    },
+    "ext": ".js,.json",
+    "watch": "./"
+  }
