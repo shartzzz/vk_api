@@ -1,14 +1,18 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+import dotenv from 'dotenv';
+dotenv.config();
+import express from 'express';
+import bodyParser from 'body-parser';
 
-const { PORT, CONFIRMATION } = require('./config');
+const PORT = process.env.PORT;
+const CONFIRMATION = process.env.CONFIRMATION;
+
 console.log(CONFIRMATION, PORT)
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => res.send('Hello Leads!'));
+app.get('/', (req, res) => res.send('Hello ES6'));
 app.post('/', (req, res) => {
   const { body } = req;
   switch (body.type) {
