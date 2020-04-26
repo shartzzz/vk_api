@@ -1,13 +1,13 @@
 {
   "name": "vk_api",
   "version": "1.0.0",
-  "main": "app.js",
-  "exports": "app.js",
+  "main": "server.js",
+  "exports": "server.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon --experimental-json-modules app.js"
+    "start": "node --experimental-json-modules server.js",
+    "dev": "nodemon --experimental-json-modules server.js"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -22,6 +22,7 @@
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
     "nodemon": "^2.0.3"
   }
 }
